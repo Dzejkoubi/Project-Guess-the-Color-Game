@@ -3,9 +3,9 @@ JS begginer project in web browser
 ## Cíl projekt
 Learn how to code better idk
 ## Zvolené technologie, předpokládaná náročnost
--JS
--html
--css
+-JS <br>
+-html <br>
+-css <br>
 ### Game rules and flow
 Easily youll just see 4 colors to chose form and on top of the page RGB color code. <br>
 Goal to win is to pick right color that has RGB code on top. <br>
