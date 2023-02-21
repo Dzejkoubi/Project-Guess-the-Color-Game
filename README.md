@@ -13,10 +13,10 @@ Goal to win is to pick right color that has RGB code on top. <br>
 #### Example:
 - There is RGB color code: 255, 255, 0
 - You will chose bettween these colors
-  - 🟥
-  - 🟨
-  - 🟦
-  - 🟩
+  - 🟥  (red)
+  - 🟨  (yellow)
+  - 🟦  (blue)
+  - 🟩  (green)
 - Just easily aswer the yellow because its obvious :D and done
 - Now you can move to **next round** =>
 ...
