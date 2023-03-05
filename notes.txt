@@ -1,0 +1,20 @@
+Ideas:
+Write me a function that will write into console the color that was clicked
+and if it was correct or not
+if correct, change the background color to the correct color
+if incorrect, change the background color to red
+
+background: #03001e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #fdeff9,
+    #ec38bc,
+    #7303c0,
+    #03001e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ec38bc,
+    #7303c0,
+    #03001e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
