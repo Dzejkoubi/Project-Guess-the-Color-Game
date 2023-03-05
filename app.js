@@ -1,5 +1,4 @@
 let colors = [];
-
 for (let i = 0; i < 4; i++) {
   let red = Math.floor(Math.random() * 256);
   let green = Math.floor(Math.random() * 256);
@@ -25,3 +24,17 @@ console.log(randomColor);
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("h3").textContent = `What color is "${randomColor}"?`;
 });
+
+document.querySelectorAll("button").forEach((button) => {
+  button.addEventListener("click", function () {
+    if (this.textContent === randomColor) {
+      alert("Correct!");
+    } else {
+      alert("Wrong!");
+    }
+  });
+});
+//Write me a function that will write into console the color that was clicked
+//and if it was correct or not
+//if correct, change the background color to the correct color
+//if incorrect, change the background color to red
