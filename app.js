@@ -3,38 +3,13 @@ for (let i = 0; i < 4; i++) {
   let red = Math.floor(Math.random() * 256);
   let green = Math.floor(Math.random() * 256);
   let blue = Math.floor(Math.random() * 256);
-  let color = `rgb(${red}, ${green}, ${blue})`;
-  colors.push(color);
+  colors.push(`rgb(${red}, ${green}, ${blue})`);
 }
-
 console.log(colors);
-
-document.documentElement.style.setProperty("--color-1", colors[0]);
-document.documentElement.style.setProperty("--color-2", colors[1]);
-document.documentElement.style.setProperty("--color-3", colors[2]);
-document.documentElement.style.setProperty("--color-4", colors[3]);
-
-//randomly select a color from the array
-let randomColor = colors[Math.floor(Math.random() * colors.length)].slice(
-  4,
-  -1
-);
-console.log(randomColor);
-//change text in h3 to the random color
+for (let i = 1; i <= 4; i++) {
+  document.documentElement.style.setProperty(`--color-${i}`, colors[i - 1]);
+}
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector("h3").textContent = `What color is "${randomColor}"?`;
+  let whatColor = document.getElementById("color-display");
+  whatColor.textContent = "This is the new text.";
 });
-
-document.querySelectorAll("button").forEach((button) => {
-  button.addEventListener("click", function () {
-    if (this.textContent === randomColor) {
-      alert("Correct!");
-    } else {
-      alert("Wrong!");
-    }
-  });
-});
-//Write me a function that will write into console the color that was clicked
-//and if it was correct or not
-//if correct, change the background color to the correct color
-//if incorrect, change the background color to red
